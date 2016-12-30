@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		body{font-family: Microsoft Yahei,Arial Black,tahoma,arial,Hiragino Sans GB;}
+		
+		
+		.btn{text-align: center; box-sizing: border-box;display: inline-block;vertical-align: middle; cursor: pointer; border-radius: 100px; white-space: nowrap; touch-action: manipulation;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none; background-color: white;}
+
+		.btn-small{padding: 2px 8px; font-size: 12px ;line-height: 1.5;}
+		.btn-xmedium{padding: 4px 12px;font-size: 14px; line-height: 1.42857143}
+		.btn-medium{padding:8px 30px;font-size: 16px; line-height: 1.25}
+		.btn-large{padding: 12px 45px; font-size: 18px; line-height: 1}
+		
+		.btn-fill{color: white;}
+		.btn-fill.btn-small{padding: 3px 9px;}
+		.btn-fill.btn-xmeduim{padding: 5px 13px;}
+		.btn-fill.btn-medium{padding: 9px 31px;}
+		.btn-fill.btn-large{padding: 13px 46px;}
+
+		
+		
+		.btn-gray{border:solid thin #bbb; color: #999;}
+		.btn-yellow{border: solid thin #ff9900; color: #ff9900;}
+		.btn-blue{border: solid thin #007fff; color: #007fff;}
+		.btn-green{border: solid thin #00b22d; color: #00b22d;}
+		.btn-red{border: solid thin #ff3333; color: #ff3333;}
+		
+		.btn-gray:hover{background-color: #eee; color: #666;}
+		.btn-yellow:hover{background-color: #fff5ae; color: #ff9900;}
+		.btn-blue:hover{background-color: #c8e3ff; color: #007fff;}
+		.btn-green:hover{background-color: #ceffd1; color: #00b22d;}
+		.btn-red:hover{background-color: #ffd9d9; color: #ff3333;}
+		
+		.btn-fill-gray{background-color: #bbb; color: white}		
+		.btn-fill-yellow{background-color: #ff9900;color: white;}
+		.btn-fill-blue{background-color: #007fff; color: white;}
+		.btn-fill-green{background-color: #00b22d; color: white;}
+		.btn-fill-red{background-color: #ff3333; color: white;}
+		
+		.btn-fill-gray:hover{background-color: #444; color: white}		
+		.btn-fill-yellow:hover{background-color: #ff7f00; color: white;}
+		.btn-fill-blue:hover{background-color: #007ed2; color: white;}
+		.btn-fill-green:hover{background-color: #009325; color: white;}
+		.btn-fill-red:hover{background-color: #ff0000; color: white;}
+
+
+		.badge{text-align: center; box-sizing: border-box;display: inline-block;vertical-align: middle;  border-radius: 100px;background-color: white;}
+		
+		
+		.badge-small{padding: 2px 8px; font-size: 12px ;line-height: 1.5;}
+		.badge-xmedium{padding: 6px 12px;font-size: 14px; line-height: 1.42857143}
+		.badge-medium{padding:8px 30px;font-size: 16px; line-height: 1.25}
+		.badge-large{padding: 12px 45px; font-size: 18px; line-height: 1}
+		
+		.badge-fill{color: white}
+		.badge-fill.badge-small{padding: 3px 9px;}
+		.badge-fill.badge-xmeduim{padding: 5px 13px;}
+		.badge-fill.badge-medium{padding: 9px 31px;}
+		.badge-fill.badge-large{padding: 13px 46px;}
+		
+		.badge-gray{border:solid thin #bbb; color: #999;}
+		.badge-yellow{border: solid thin #ff9900; color: #ff9900;}
+		.badge-blue{border: solid thin #007fff; color: #007fff;}
+		.badge-green{border: solid thin #00b22d; color: #00b22d;}
+		.badge-red{border: solid thin #ff3333; color: #ff3333;}
+	
+		.badge-fill-gray{background-color: #ccc;}
+		.badge-fill-yellow{background-color: #ff9900;}
+		.badge-fill-blue{background-color: #73b9ff;}
+		.badge-fill-green{background-color: #4bce44;}
+		.badge-fill-red{background-color: #ff5757;}
+
+		.flag{border-radius: 100%;text-align: center;display: inline-block;}
+
+		.flag-small{width: 26px; height: 26px; line-height: 26px;font-size: 10px}
+		.flag-xmedium{width: 30px; height: 30px; line-height: 30px;font-size: 12px}
+		.flag-medium{width: 35px; height: 35px; line-height: 35px;font-size: 14px}
+		.flag-large{width: 40px; height: 40px; line-height: 40px;font-size: 16px}
+
+		.flag-fill{color: white;}
+		.flag-fill.flag-small{width: 27px; height: 27px; line-height: 27px;}
+		.flag-fill.flag-xmeduim{width: 31px; height: 31px; line-height: 31px;}
+		.flag-fill.flag-medium{width: 36px; height: 36px; line-height: 36px;}
+		.flag-fill.flag-large{width: 41px; height: 41px; line-height: 41px;}
+		
+		.flag-gray{border:solid thin #bbb; color: #999;}
+		.flag-yellow{border: solid thin #ff9900; color: #ff9900;}
+		.flag-blue{border: solid thin #007fff; color: #007fff;}
+		.flag-green{border: solid thin #00b22d; color: #00b22d;}
+		.flag-red{border: solid thin #ff3333; color: #ff3333;}
+
+		.flag-fill-gray{background-color: #ccc; color: white}
+		.flag-fill-yellow{background-color: #fec531;color: white}
+		.flag-fill-green{background-color: #54c294;color: white}
+		.flag-fill-blue{background-color: #5cc1e2;color: white}
+		.flag-fill-red{background-color: #ff5757; color: white}
+		
+	</style>
+</head>
+<body>
+<!-- button -->
+	<h1>button</h1>
+	<div class="btn btn-small btn-fill btn-fill-gray">小号</div>
+	<div class="btn btn-small btn-fill btn-fill-yellow">小号</div>	
+	<div class="btn btn-small btn-fill btn-fill-blue">小号</div>
+	<div class="btn btn-small btn-fill btn-fill-green">小号</div>
+	<div class="btn btn-small btn-fill btn-fill-red">小号</div>
+	<div class="btn btn-small btn-fill btn-fill-yellow">小号</div>
+	
+	<h1></h1>
+	<div class="btn btn-xmedium btn-fill btn-fill-gray">小中号</div>
+	<div class="btn btn-xmedium btn-fill btn-fill-yellow">小中号</div>	
+	<div class="btn btn-xmedium btn-fill btn-fill-blue">小中号</div>
+	<div class="btn btn-xmedium btn-fill btn-fill-green">小中号</div>
+	<div class="btn btn-xmedium btn-fill btn-fill-red">小中号</div>
+	<div class="btn btn-xmedium btn-fill btn-fill-yellow">小中号</div>
+	
+	<h1></h1>
+	<div class="btn btn-medium btn-fill btn-fill-gray">中号</div>
+	<div class="btn btn-medium btn-fill btn-fill-yellow">中号</div>	
+	<div class="btn btn-medium btn-fill btn-fill-blue">中号</div>
+	<div class="btn btn-medium btn-fill btn-fill-green">中号</div>
+	<div class="btn btn-medium btn-fill btn-fill-red">中号</div>
+	<div class="btn btn-medium btn-fill btn-fill-yellow">中号</div>
+
+	<h1></h1>
+	<div class="btn btn-large btn-fill btn-fill-gray">大号</div>
+	<div class="btn btn-large btn-fill btn-fill-yellow">大号</div>	
+	<div class="btn btn-large btn-fill btn-fill-blue">大号</div>
+	<div class="btn btn-large btn-fill btn-fill-green">大号</div>
+	<div class="btn btn-large btn-fill btn-fill-red">大号</div>
+	<div class="btn btn-large btn-fill btn-fill-yellow">大号</div>
+
+
+	<h1></h1>
+	<div class="btn btn-small btn-gray">小号</div>
+	<div class="btn btn-small btn-yellow">小号</div>	
+	<div class="btn btn-small btn-blue">小号</div>
+	<div class="btn btn-small btn-green">小号</div>
+	<div class="btn btn-small btn-red">小号</div>
+	<div class="btn btn-small btn-yellow">小号</div>
+	
+	<h1></h1>
+	<div class="btn btn-xmedium btn-gray">小中号</div>
+	<div class="btn btn-xmedium btn-yellow">小中号</div>	
+	<div class="btn btn-xmedium btn-blue">小中号</div>
+	<div class="btn btn-xmedium btn-green">小中号</div>
+	<div class="btn btn-xmedium btn-red">小中号</div>
+	<div class="btn btn-xmedium btn-yellow">小中号</div>
+	
+	<h1></h1>
+	<div class="btn btn-medium btn-gray">中号</div>
+	<div class="btn btn-medium btn-yellow">中号</div>	
+	<div class="btn btn-medium btn-blue">中号</div>
+	<div class="btn btn-medium btn-green">中号</div>
+	<div class="btn btn-medium btn-red">中号</div>
+	<div class="btn btn-medium btn-yellow">中号</div>
+
+	<h1></h1>
+	<div class="btn btn-large btn-gray">大号</div>
+	<div class="btn btn-large btn-yellow">大号</div>	
+	<div class="btn btn-large btn-blue">大号</div>
+	<div class="btn btn-large btn-green">大号</div>
+	<div class="btn btn-large btn-red">大号</div>
+	<div class="btn btn-large btn-yellow">大号</div>
+	
+
+<!-- badge -->
+	<h1>badge</h1>
+	<div class="badge badge-small badge-gray">小号</div>
+	<div class="badge badge-small badge-yellow">小号</div>	
+	<div class="badge badge-small badge-blue">小号</div>
+	<div class="badge badge-small badge-green">小号</div>
+	<div class="badge badge-small badge-red">小号</div>
+	<div class="badge badge-small badge-yellow">小号</div>
+	
+	<h1></h1>
+	<div class="badge badge-xmedium badge-gray">小中号</div>
+	<div class="badge badge-xmedium badge-yellow">小中号</div>	
+	<div class="badge badge-xmedium badge-blue">小中号</div>
+	<div class="badge badge-xmedium badge-green">小中号</div>
+	<div class="badge badge-xmedium badge-red">小中号</div>
+	<div class="badge badge-xmedium badge-yellow">小中号</div>
+	
+	<h1></h1>
+	<div class="badge badge-medium badge-gray">中号</div>
+	<div class="badge badge-medium badge-yellow">中号</div>	
+	<div class="badge badge-medium badge-blue">中号</div>
+	<div class="badge badge-medium badge-green">中号</div>
+	<div class="badge badge-medium badge-red">中号</div>
+	<div class="badge badge-medium badge-yellow">中号</div>
+
+	<h1></h1>
+	<div class="badge badge-large badge-gray">大号</div>
+	<div class="badge badge-large badge-yellow">大号</div>	
+	<div class="badge badge-large badge-blue">大号</div>
+	<div class="badge badge-large badge-green">大号</div>
+	<div class="badge badge-large badge-red">大号</div>
+	<div class="badge badge-large badge-yellow">大号</div>
+
+
+	<h1></h1>
+	<div class="badge badge-small badge-fill badge-fill-gray">小号</div>
+	<div class="badge badge-small badge-fill badge-fill-yellow">小号</div>	
+	<div class="badge badge-small badge-fill badge-fill-blue">小号</div>
+	<div class="badge badge-small badge-fill badge-fill-green">小号</div>
+	<div class="badge badge-small badge-fill badge-fill-red">小号</div>
+	<div class="badge badge-small badge-fill badge-fill-yellow">小号</div>
+	
+	<h1></h1>
+	<div class="badge badge-xmedium badge-fill badge-fill-gray">小中号</div>
+	<div class="badge badge-xmedium badge-fill badge-fill-yellow">小中号</div>	
+	<div class="badge badge-xmedium badge-fill badge-fill-blue">小中号</div>
+	<div class="badge badge-xmedium badge-fill badge-fill-green">小中号</div>
+	<div class="badge badge-xmedium badge-fill badge-fill-red">小中号</div>
+	<div class="badge badge-xmedium badge-fill badge-fill-yellow">小中号</div>
+	
+	<h1></h1>
+	<div class="badge badge-medium badge-fill badge-fill-gray">中号</div>
+	<div class="badge badge-medium badge-fill badge-fill-yellow">中号</div>	
+	<div class="badge badge-medium badge-fill badge-fill-blue">中号</div>
+	<div class="badge badge-medium badge-fill badge-fill-green">中号</div>
+	<div class="badge badge-medium badge-fill badge-fill-red">中号</div>
+	<div class="badge badge-medium badge-fill badge-fill-yellow">中号</div>
+
+	<h1></h1>
+	<div class="badge badge-large badge-fill badge-fill-gray">大号</div>
+	<div class="badge badge-large badge-fill badge-fill-yellow">大号</div>	
+	<div class="badge badge-large badge-fill badge-fill-blue">大号</div>
+	<div class="badge badge-large badge-fill badge-fill-green">大号</div>
+	<div class="badge badge-large badge-fill badge-fill-red">大号</div>
+	<div class="badge badge-large badge-fill badge-fill-yellow">大号</div>
+
+<!-- flag -->
+	<h1>flag</h1>
+	<div class="flag flag-small flag-gray">小</div>
+	<div class="flag flag-small flag-yellow">小</div>	
+	<div class="flag flag-small flag-blue">小</div>
+	<div class="flag flag-small flag-green">小</div>
+	<div class="flag flag-small flag-red">小</div>
+	<div class="flag flag-small flag-yellow">小</div>
+	
+	<h1></h1>
+	<div class="flag flag-xmedium flag-gray">xm</div>
+	<div class="flag flag-xmedium flag-yellow">xm</div>	
+	<div class="flag flag-xmedium flag-blue">xm</div>
+	<div class="flag flag-xmedium flag-green">xm</div>
+	<div class="flag flag-xmedium flag-red">xm</div>
+	<div class="flag flag-xmedium flag-yellow">xm</div>
+	
+	<h1></h1>
+	<div class="flag flag-medium flag-gray">中</div>
+	<div class="flag flag-medium flag-yellow">中</div>	
+	<div class="flag flag-medium flag-blue">中</div>
+	<div class="flag flag-medium flag-green">中</div>
+	<div class="flag flag-medium flag-red">中</div>
+	<div class="flag flag-medium flag-yellow">中</div>
+
+	<h1></h1>
+	<div class="flag flag-large flag-gray">大</div>
+	<div class="flag flag-large flag-yellow">大</div>	
+	<div class="flag flag-large flag-blue">大</div>
+	<div class="flag flag-large flag-green">大</div>
+	<div class="flag flag-large flag-red">大</div>
+	<div class="flag flag-large flag-yellow">大</div>
+
+
+	<h1></h1>
+	<div class="flag flag-small flag-fill flag-fill-gray">小</div>
+	<div class="flag flag-small flag-fill flag-fill-yellow">小</div>	
+	<div class="flag flag-small flag-fill flag-fill-blue">小</div>
+	<div class="flag flag-small flag-fill flag-fill-green">小</div>
+	<div class="flag flag-small flag-fill flag-fill-red">小</div>
+	<div class="flag flag-small flag-fill flag-fill-yellow">小</div>
+	
+	<h1></h1>
+	<div class="flag flag-xmedium flag-fill flag-fill-gray">xm</div>
+	<div class="flag flag-xmedium flag-fill flag-fill-yellow">xm</div>	
+	<div class="flag flag-xmedium flag-fill flag-fill-blue">xm</div>
+	<div class="flag flag-xmedium flag-fill flag-fill-green">xm</div>
+	<div class="flag flag-xmedium flag-fill flag-fill-red">xm</div>
+	<div class="flag flag-xmedium flag-fill flag-fill-yellow">xm</div>
+	
+	<h1></h1>
+	<div class="flag flag-medium flag-fill flag-fill-gray">中</div>
+	<div class="flag flag-medium flag-fill flag-fill-yellow">中</div>	
+	<div class="flag flag-medium flag-fill flag-fill-blue">中</div>
+	<div class="flag flag-medium flag-fill flag-fill-green">中</div>
+	<div class="flag flag-medium flag-fill flag-fill-red">中</div>
+	<div class="flag flag-medium flag-fill flag-fill-yellow">中</div>
+
+	<h1></h1>
+	<div class="flag flag-large flag-fill flag-fill-gray">大</div>
+	<div class="flag flag-large flag-fill flag-fill-yellow">大</div>	
+	<div class="flag flag-large flag-fill flag-fill-blue">大</div>
+	<div class="flag flag-large flag-fill flag-fill-green">大</div>
+	<div class="flag flag-large flag-fill flag-fill-red">大</div>
+	<div class="flag flag-large flag-fill flag-fill-yellow">大</div>
+</body>
+</html>
